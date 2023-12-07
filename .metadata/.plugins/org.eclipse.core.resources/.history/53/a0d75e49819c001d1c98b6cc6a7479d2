@@ -1,0 +1,15 @@
+package com.example.Employee.Model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class EmployeeModel {
+	
+	private Long EmployeeId;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private Long departmentId;
+	
+
+}

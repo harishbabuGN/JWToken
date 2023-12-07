@@ -1,0 +1,33 @@
+package com.example.Employee.VO;
+
+import java.util.Optional;
+
+import com.example.Employee.Model.Employee;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ResponseTemplateVo {
+	
+	private Optional<Employee> employee;
+	private Department department;
+	public Optional<Employee> getEmployee() {
+		return employee;
+	}
+	public void setEmployee(Optional<Employee> employee2) {
+		this.employee = employee2;
+	}
+	public Department getDepartment() {
+		return department;
+	}
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	
+}

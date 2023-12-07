@@ -1,0 +1,99 @@
+server.port=9001
+
+spring.datasource.url=jdbc:mysql://localhost:3306/microdb
+spring.datasource.oauth2.url=jdbc:mysql://localhost:3306/microdb
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.connectionProperties=useUnicode=true;characterEncoding=UTF-8;autoReconnect=true;useSSL=false
+spring.datasource.sql-script-encoding=UTF-8
+spring.datasource.username = root
+spring.datasource.password = Harsha@123
+spring.datasource.testWhileIdle = true
+spring.datasource.validationQuery = SELECT 1
+spring.jpa.show-sql = true
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.hibernate.naming-strategy = org.hibernate.cfg.ImprovedNamingStrategy
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+##
+###app.secret=harish
+###
+####Connection Props
+#spring.datasource.dbcp2.driver-class-name=com.mysql.cj.jdbc.Driver
+#spring.datasource.url=jdbc:mysql://localhost:3306/microdb
+#spring.datasource.username=root
+#spring.datasource.password=Harsha@123
+#spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+#spring.jpa.defer-datasource-initialization=true
+##spring.main.web-application-type=none
+##
+#
+###JPA Props
+#spring.jsp.show-sql=true
+##spring.jpa.ddl-auto=create
+##spring.jpa.generate-ddl=true
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+##spring.jpa.hibernate.ddl-auto=create
+#spring.jpa.open-in-view=false
+#spring.devtools.livereload.enabled=false
+##spring.thymeleaf.check-template-location=false
+#spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+##spring.main.allow-bean-definition-overriding=true
+##spring.jpa.defer-datasource-initialization=true
+#
+
+
+#
+#spring.datasource.dbcp2.driver-class-name=com.mysql.cj.jdbc.Driver
+#spring.datasource.url=jdbc:mysql://localhost:3306/microdb
+#spring.datasource.username=root
+#spring.datasource.password=Harsha@123
+#spring.jpa.defer-datasource-initialization=true
+
+##JPA Props
+#spring.jsp.show-sql=true
+##spring.jpa.ddl-auto=create
+##spring.jpa.generate-ddl=true
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+##spring.jpa.hibernate.ddl-auto=create
+#spring.jpa.open-in-view=false
+#spring.devtools.livereload.enabled=false
+##spring.thymeleaf.check-template-location=false
+#spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+##spring.main.allow-bean-definition-overriding=true
+##spring.jpa.defer-datasource-initialization=true
+
+
+# spring.jpa.database = MYSQL
+#    
+#    # Hibernate
+#    hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+#    hibernate.show_sql: true
+#    hibernate.hbm2ddl.auto: update
+#    entitymanager.packagesToScan: /
+#    
+#    spring.jpa.show-sql=true
+#spring.h2.console.enabled=true
+#spring.jpa.defer-datasource-initialization=true
+#
+#
+###JPA Props
+##spring.jsp.show-sql=true
+###spring.jpa.ddl-auto=create
+###spring.jpa.generate-ddl=true
+##spring:
+##  jpa:
+##    hibernate:
+##      ddl-auto: update
+###spring.jpa.hibernate.ddl-auto=create
+##spring.jpa.open-in-view=false
+##spring.devtools.livereload.enabled=false
+###spring.thymeleaf.check-template-location=false
+##spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+###spring.main.allow-bean-definition-overriding=true
+###spring.jpa.defer-datasource-initialization=true

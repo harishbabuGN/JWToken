@@ -1,0 +1,22 @@
+package com.example.Employee.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.Employee.Model.Employee;
+import com.example.Employee.Repository.EmployeeRepository;
+
+@Service
+public class EmployeeService {
+	
+	
+	@Autowired
+	private EmployeeRepository employeeRepository;
+
+	public Employee saveEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return employeeRepository.save(employee);
+	}
+	
+
+}

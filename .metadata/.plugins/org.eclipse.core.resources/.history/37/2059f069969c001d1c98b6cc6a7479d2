@@ -1,0 +1,42 @@
+package com.example.Employee.Service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.example.Employee.Model.Employee;
+import com.example.Employee.Repository.EmployeeRepository;
+import com.example.Employee.VO.Department;
+import com.example.Employee.VO.ResponseTemplateVo;
+
+@Service
+public class EmployeeService {
+	
+	private String url="url";
+	
+	@Autowired
+	private EmployeeRepository employeeRepository;
+
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	public Employee saveEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return employeeRepository.save(employee);
+	}
+
+	public ResponseTemplateVo getUserwithDepartment(Long employeeId) {
+		
+		ResponseTemplateVo vo = new ResponseTemplateVo();
+		Employee employee =employeeRepository.findByEmployeeId(employeeId);
+		
+		Department department=restTemplate.getForObject("http://localhost:9001/departments/"+employee.getDepartmentId(), Department.class);
+		vo.setEmployee(employee);
+		vo.setDepartment(department);
+		return vo;
+	}
+	
+
+}
